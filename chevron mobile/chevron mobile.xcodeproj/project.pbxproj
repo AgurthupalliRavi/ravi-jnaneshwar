@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8F653B94175A3A8400DD968D /* storage.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F653B93175A3A8400DD968D /* storage.png */; };
+		8F653B98175A3B7600DD968D /* lock.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F653B95175A3B7600DD968D /* lock.png */; };
+		8F653B99175A3B7600DD968D /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F653B96175A3B7600DD968D /* user.png */; };
+		8F653B9A175A3B7600DD968D /* user@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F653B97175A3B7600DD968D /* user@2x.png */; };
+		8F653B9E175A3C3C00DD968D /* UserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F653B9C175A3C3C00DD968D /* UserViewController.m */; };
+		8F653B9F175A3C3C00DD968D /* UserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F653B9D175A3C3C00DD968D /* UserViewController.xib */; };
+		8F653BA3175A3D1800DD968D /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F653BA1175A3D1800DD968D /* InfoViewController.m */; };
+		8F653BA4175A3D1800DD968D /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F653BA2175A3D1800DD968D /* InfoViewController.xib */; };
+		8F653BA6175A3D2400DD968D /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F653BA5175A3D2400DD968D /* info.png */; };
+		8F6F235B1759AE3A00F47335 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F6F235A1759AE3A00F47335 /* UIKit.framework */; };
+		8F6F235D1759AE3A00F47335 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F6F235C1759AE3A00F47335 /* Foundation.framework */; };
+		8F6F235F1759AE3A00F47335 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F6F235E1759AE3A00F47335 /* CoreGraphics.framework */; };
+		8F6F23651759AE3A00F47335 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8F6F23631759AE3A00F47335 /* InfoPlist.strings */; };
+		8F6F23671759AE3A00F47335 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6F23661759AE3A00F47335 /* main.m */; };
+		8F6F236B1759AE3A00F47335 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6F236A1759AE3A00F47335 /* AppDelegate.m */; };
+		8F6F236D1759AE3A00F47335 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F6F236C1759AE3A00F47335 /* Default.png */; };
+		8F6F236F1759AE3A00F47335 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F6F236E1759AE3A00F47335 /* Default@2x.png */; };
+		8F6F23711759AE3A00F47335 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F6F23701759AE3A00F47335 /* Default-568h@2x.png */; };
+		8F6F23741759AE3A00F47335 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6F23731759AE3A00F47335 /* FirstViewController.m */; };
+		8F6F237B1759AE3A00F47335 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6F237A1759AE3A00F47335 /* SecondViewController.m */; };
+		8F6F23821759AE3A00F47335 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F6F23801759AE3A00F47335 /* FirstViewController.xib */; };
+		8F6F23851759AE3A00F47335 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F6F23831759AE3A00F47335 /* SecondViewController.xib */; };
+		8F6F238D1759AE3A00F47335 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F6F238C1759AE3A00F47335 /* SenTestingKit.framework */; };
+		8F6F238E1759AE3A00F47335 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F6F235A1759AE3A00F47335 /* UIKit.framework */; };
+		8F6F238F1759AE3A00F47335 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F6F235C1759AE3A00F47335 /* Foundation.framework */; };
+		8F6F23971759AE3A00F47335 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8F6F23951759AE3A00F47335 /* InfoPlist.strings */; };
+		8F6F239A1759AE3A00F47335 /* chevron_mobileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6F23991759AE3A00F47335 /* chevron_mobileTests.m */; };
+		8F6F23A41759AFF400F47335 /* mybg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F6F23A31759AFF400F47335 /* mybg.jpg */; };
+		8F6F23A6175A20F300F47335 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F6F23A5175A20F300F47335 /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8F6F23901759AE3A00F47335 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F6F234F1759AE3A00F47335 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F6F23561759AE3A00F47335;
+			remoteInfo = "chevron mobile";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8F653B93175A3A8400DD968D /* storage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = storage.png; sourceTree = "<group>"; };
+		8F653B95175A3B7600DD968D /* lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lock.png; sourceTree = "<group>"; };
+		8F653B96175A3B7600DD968D /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
+		8F653B97175A3B7600DD968D /* user@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user@2x.png"; sourceTree = "<group>"; };
+		8F653B9B175A3C3C00DD968D /* UserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserViewController.h; sourceTree = "<group>"; };
+		8F653B9C175A3C3C00DD968D /* UserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserViewController.m; sourceTree = "<group>"; };
+		8F653B9D175A3C3C00DD968D /* UserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserViewController.xib; sourceTree = "<group>"; };
+		8F653BA0175A3D1800DD968D /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		8F653BA1175A3D1800DD968D /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		8F653BA2175A3D1800DD968D /* InfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoViewController.xib; sourceTree = "<group>"; };
+		8F653BA5175A3D2400DD968D /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
+		8F6F23571759AE3A00F47335 /* chevron mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "chevron mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F6F235A1759AE3A00F47335 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8F6F235C1759AE3A00F47335 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8F6F235E1759AE3A00F47335 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8F6F23621759AE3A00F47335 /* chevron mobile-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "chevron mobile-Info.plist"; sourceTree = "<group>"; };
+		8F6F23641759AE3A00F47335 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8F6F23661759AE3A00F47335 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8F6F23681759AE3A00F47335 /* chevron mobile-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "chevron mobile-Prefix.pch"; sourceTree = "<group>"; };
+		8F6F23691759AE3A00F47335 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8F6F236A1759AE3A00F47335 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8F6F236C1759AE3A00F47335 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		8F6F236E1759AE3A00F47335 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		8F6F23701759AE3A00F47335 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		8F6F23721759AE3A00F47335 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		8F6F23731759AE3A00F47335 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		8F6F23791759AE3A00F47335 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		8F6F237A1759AE3A00F47335 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		8F6F23811759AE3A00F47335 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController.xib; sourceTree = "<group>"; };
+		8F6F23841759AE3A00F47335 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController.xib; sourceTree = "<group>"; };
+		8F6F238B1759AE3A00F47335 /* chevron mobileTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "chevron mobileTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F6F238C1759AE3A00F47335 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		8F6F23941759AE3A00F47335 /* chevron mobileTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "chevron mobileTests-Info.plist"; sourceTree = "<group>"; };
+		8F6F23961759AE3A00F47335 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8F6F23981759AE3A00F47335 /* chevron_mobileTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = chevron_mobileTests.h; sourceTree = "<group>"; };
+		8F6F23991759AE3A00F47335 /* chevron_mobileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = chevron_mobileTests.m; sourceTree = "<group>"; };
+		8F6F23A31759AFF400F47335 /* mybg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mybg.jpg; sourceTree = "<group>"; };
+		8F6F23A5175A20F300F47335 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8F6F23541759AE3A00F47335 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F6F23A6175A20F300F47335 /* QuartzCore.framework in Frameworks */,
+				8F6F235B1759AE3A00F47335 /* UIKit.framework in Frameworks */,
+				8F6F235D1759AE3A00F47335 /* Foundation.framework in Frameworks */,
+				8F6F235F1759AE3A00F47335 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F6F23871759AE3A00F47335 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F6F238D1759AE3A00F47335 /* SenTestingKit.framework in Frameworks */,
+				8F6F238E1759AE3A00F47335 /* UIKit.framework in Frameworks */,
+				8F6F238F1759AE3A00F47335 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8F653BA7175A3E6500DD968D /* images */ = {
+			isa = PBXGroup;
+			children = (
+				8F6F236C1759AE3A00F47335 /* Default.png */,
+				8F6F236E1759AE3A00F47335 /* Default@2x.png */,
+				8F6F23701759AE3A00F47335 /* Default-568h@2x.png */,
+				8F653BA5175A3D2400DD968D /* info.png */,
+				8F653B95175A3B7600DD968D /* lock.png */,
+				8F653B96175A3B7600DD968D /* user.png */,
+				8F653B97175A3B7600DD968D /* user@2x.png */,
+				8F653B93175A3A8400DD968D /* storage.png */,
+				8F6F23A31759AFF400F47335 /* mybg.jpg */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		8F6F234E1759AE3A00F47335 = {
+			isa = PBXGroup;
+			children = (
+				8F6F23A5175A20F300F47335 /* QuartzCore.framework */,
+				8F6F23601759AE3A00F47335 /* chevron mobile */,
+				8F6F23921759AE3A00F47335 /* chevron mobileTests */,
+				8F6F23591759AE3A00F47335 /* Frameworks */,
+				8F6F23581759AE3A00F47335 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8F6F23581759AE3A00F47335 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F6F23571759AE3A00F47335 /* chevron mobile.app */,
+				8F6F238B1759AE3A00F47335 /* chevron mobileTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8F6F23591759AE3A00F47335 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F6F235A1759AE3A00F47335 /* UIKit.framework */,
+				8F6F235C1759AE3A00F47335 /* Foundation.framework */,
+				8F6F235E1759AE3A00F47335 /* CoreGraphics.framework */,
+				8F6F238C1759AE3A00F47335 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8F6F23601759AE3A00F47335 /* chevron mobile */ = {
+			isa = PBXGroup;
+			children = (
+				8F6F23691759AE3A00F47335 /* AppDelegate.h */,
+				8F6F236A1759AE3A00F47335 /* AppDelegate.m */,
+				8F6F23721759AE3A00F47335 /* FirstViewController.h */,
+				8F6F23731759AE3A00F47335 /* FirstViewController.m */,
+				8F6F23791759AE3A00F47335 /* SecondViewController.h */,
+				8F6F237A1759AE3A00F47335 /* SecondViewController.m */,
+				8F6F23801759AE3A00F47335 /* FirstViewController.xib */,
+				8F6F23831759AE3A00F47335 /* SecondViewController.xib */,
+				8F6F23611759AE3A00F47335 /* Supporting Files */,
+				8F653B9B175A3C3C00DD968D /* UserViewController.h */,
+				8F653B9C175A3C3C00DD968D /* UserViewController.m */,
+				8F653B9D175A3C3C00DD968D /* UserViewController.xib */,
+				8F653BA0175A3D1800DD968D /* InfoViewController.h */,
+				8F653BA1175A3D1800DD968D /* InfoViewController.m */,
+				8F653BA2175A3D1800DD968D /* InfoViewController.xib */,
+			);
+			path = "chevron mobile";
+			sourceTree = "<group>";
+		};
+		8F6F23611759AE3A00F47335 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8F653BA7175A3E6500DD968D /* images */,
+				8F6F23621759AE3A00F47335 /* chevron mobile-Info.plist */,
+				8F6F23631759AE3A00F47335 /* InfoPlist.strings */,
+				8F6F23661759AE3A00F47335 /* main.m */,
+				8F6F23681759AE3A00F47335 /* chevron mobile-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8F6F23921759AE3A00F47335 /* chevron mobileTests */ = {
+			isa = PBXGroup;
+			children = (
+				8F6F23981759AE3A00F47335 /* chevron_mobileTests.h */,
+				8F6F23991759AE3A00F47335 /* chevron_mobileTests.m */,
+				8F6F23931759AE3A00F47335 /* Supporting Files */,
+			);
+			path = "chevron mobileTests";
+			sourceTree = "<group>";
+		};
+		8F6F23931759AE3A00F47335 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8F6F23941759AE3A00F47335 /* chevron mobileTests-Info.plist */,
+				8F6F23951759AE3A00F47335 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8F6F23561759AE3A00F47335 /* chevron mobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F6F239D1759AE3A00F47335 /* Build configuration list for PBXNativeTarget "chevron mobile" */;
+			buildPhases = (
+				8F6F23531759AE3A00F47335 /* Sources */,
+				8F6F23541759AE3A00F47335 /* Frameworks */,
+				8F6F23551759AE3A00F47335 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "chevron mobile";
+			productName = "chevron mobile";
+			productReference = 8F6F23571759AE3A00F47335 /* chevron mobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8F6F238A1759AE3A00F47335 /* chevron mobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F6F23A01759AE3A00F47335 /* Build configuration list for PBXNativeTarget "chevron mobileTests" */;
+			buildPhases = (
+				8F6F23861759AE3A00F47335 /* Sources */,
+				8F6F23871759AE3A00F47335 /* Frameworks */,
+				8F6F23881759AE3A00F47335 /* Resources */,
+				8F6F23891759AE3A00F47335 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F6F23911759AE3A00F47335 /* PBXTargetDependency */,
+			);
+			name = "chevron mobileTests";
+			productName = "chevron mobileTests";
+			productReference = 8F6F238B1759AE3A00F47335 /* chevron mobileTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8F6F234F1759AE3A00F47335 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = chevron;
+			};
+			buildConfigurationList = 8F6F23521759AE3A00F47335 /* Build configuration list for PBXProject "chevron mobile" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8F6F234E1759AE3A00F47335;
+			productRefGroup = 8F6F23581759AE3A00F47335 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8F6F23561759AE3A00F47335 /* chevron mobile */,
+				8F6F238A1759AE3A00F47335 /* chevron mobileTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8F6F23551759AE3A00F47335 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F6F23651759AE3A00F47335 /* InfoPlist.strings in Resources */,
+				8F6F236D1759AE3A00F47335 /* Default.png in Resources */,
+				8F6F236F1759AE3A00F47335 /* Default@2x.png in Resources */,
+				8F6F23711759AE3A00F47335 /* Default-568h@2x.png in Resources */,
+				8F6F23821759AE3A00F47335 /* FirstViewController.xib in Resources */,
+				8F6F23851759AE3A00F47335 /* SecondViewController.xib in Resources */,
+				8F6F23A41759AFF400F47335 /* mybg.jpg in Resources */,
+				8F653B94175A3A8400DD968D /* storage.png in Resources */,
+				8F653B98175A3B7600DD968D /* lock.png in Resources */,
+				8F653B99175A3B7600DD968D /* user.png in Resources */,
+				8F653B9A175A3B7600DD968D /* user@2x.png in Resources */,
+				8F653B9F175A3C3C00DD968D /* UserViewController.xib in Resources */,
+				8F653BA4175A3D1800DD968D /* InfoViewController.xib in Resources */,
+				8F653BA6175A3D2400DD968D /* info.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F6F23881759AE3A00F47335 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F6F23971759AE3A00F47335 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8F6F23891759AE3A00F47335 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8F6F23531759AE3A00F47335 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F6F23671759AE3A00F47335 /* main.m in Sources */,
+				8F6F236B1759AE3A00F47335 /* AppDelegate.m in Sources */,
+				8F6F23741759AE3A00F47335 /* FirstViewController.m in Sources */,
+				8F6F237B1759AE3A00F47335 /* SecondViewController.m in Sources */,
+				8F653B9E175A3C3C00DD968D /* UserViewController.m in Sources */,
+				8F653BA3175A3D1800DD968D /* InfoViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F6F23861759AE3A00F47335 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F6F239A1759AE3A00F47335 /* chevron_mobileTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8F6F23911759AE3A00F47335 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F6F23561759AE3A00F47335 /* chevron mobile */;
+			targetProxy = 8F6F23901759AE3A00F47335 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8F6F23631759AE3A00F47335 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F6F23641759AE3A00F47335 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8F6F23801759AE3A00F47335 /* FirstViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F6F23811759AE3A00F47335 /* en */,
+			);
+			name = FirstViewController.xib;
+			sourceTree = "<group>";
+		};
+		8F6F23831759AE3A00F47335 /* SecondViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F6F23841759AE3A00F47335 /* en */,
+			);
+			name = SecondViewController.xib;
+			sourceTree = "<group>";
+		};
+		8F6F23951759AE3A00F47335 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F6F23961759AE3A00F47335 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8F6F239B1759AE3A00F47335 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		8F6F239C1759AE3A00F47335 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8F6F239E1759AE3A00F47335 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "chevron mobile/chevron mobile-Prefix.pch";
+				INFOPLIST_FILE = "chevron mobile/chevron mobile-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8F6F239F1759AE3A00F47335 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "chevron mobile/chevron mobile-Prefix.pch";
+				INFOPLIST_FILE = "chevron mobile/chevron mobile-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8F6F23A11759AE3A00F47335 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/chevron mobile.app/chevron mobile";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "chevron mobile/chevron mobile-Prefix.pch";
+				INFOPLIST_FILE = "chevron mobileTests/chevron mobileTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		8F6F23A21759AE3A00F47335 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/chevron mobile.app/chevron mobile";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "chevron mobile/chevron mobile-Prefix.pch";
+				INFOPLIST_FILE = "chevron mobileTests/chevron mobileTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8F6F23521759AE3A00F47335 /* Build configuration list for PBXProject "chevron mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F6F239B1759AE3A00F47335 /* Debug */,
+				8F6F239C1759AE3A00F47335 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F6F239D1759AE3A00F47335 /* Build configuration list for PBXNativeTarget "chevron mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F6F239E1759AE3A00F47335 /* Debug */,
+				8F6F239F1759AE3A00F47335 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F6F23A01759AE3A00F47335 /* Build configuration list for PBXNativeTarget "chevron mobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F6F23A11759AE3A00F47335 /* Debug */,
+				8F6F23A21759AE3A00F47335 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8F6F234F1759AE3A00F47335 /* Project object */;
+}
