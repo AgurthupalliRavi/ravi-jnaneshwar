@@ -10,7 +10,7 @@
 
 @interface FirstViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIButton *btnlogin;
+@property (retain, nonatomic) IBOutlet UIButton *btnlogin;
 @property (weak, nonatomic) IBOutlet UILabel *logintitle;
 @property (weak, nonatomic) IBOutlet UITextField *txtusername;
 @property (weak, nonatomic) IBOutlet UITextField *txtpassword;

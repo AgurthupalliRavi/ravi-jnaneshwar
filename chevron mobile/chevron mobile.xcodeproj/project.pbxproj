@@ -16,6 +16,7 @@
 		8F653BA3175A3D1800DD968D /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F653BA1175A3D1800DD968D /* InfoViewController.m */; };
 		8F653BA4175A3D1800DD968D /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F653BA2175A3D1800DD968D /* InfoViewController.xib */; };
 		8F653BA6175A3D2400DD968D /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F653BA5175A3D2400DD968D /* info.png */; };
+		8F653BAC175B070F00DD968D /* GlobalSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F653BAB175B070F00DD968D /* GlobalSet.m */; };
 		8F6F235B1759AE3A00F47335 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F6F235A1759AE3A00F47335 /* UIKit.framework */; };
 		8F6F235D1759AE3A00F47335 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F6F235C1759AE3A00F47335 /* Foundation.framework */; };
 		8F6F235F1759AE3A00F47335 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F6F235E1759AE3A00F47335 /* CoreGraphics.framework */; };
@@ -36,6 +37,7 @@
 		8F6F239A1759AE3A00F47335 /* chevron_mobileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6F23991759AE3A00F47335 /* chevron_mobileTests.m */; };
 		8F6F23A41759AFF400F47335 /* mybg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F6F23A31759AFF400F47335 /* mybg.jpg */; };
 		8F6F23A6175A20F300F47335 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F6F23A5175A20F300F47335 /* QuartzCore.framework */; };
+		8F9F8F081760ADEB00B8FC4F /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F8F071760ADEB00B8FC4F /* CustomCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		8F653BA1175A3D1800DD968D /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
 		8F653BA2175A3D1800DD968D /* InfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoViewController.xib; sourceTree = "<group>"; };
 		8F653BA5175A3D2400DD968D /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
+		8F653BAA175B070E00DD968D /* GlobalSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalSet.h; sourceTree = "<group>"; };
+		8F653BAB175B070F00DD968D /* GlobalSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalSet.m; sourceTree = "<group>"; };
 		8F6F23571759AE3A00F47335 /* chevron mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "chevron mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F6F235A1759AE3A00F47335 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8F6F235C1759AE3A00F47335 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -87,6 +91,8 @@
 		8F6F23991759AE3A00F47335 /* chevron_mobileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = chevron_mobileTests.m; sourceTree = "<group>"; };
 		8F6F23A31759AFF400F47335 /* mybg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mybg.jpg; sourceTree = "<group>"; };
 		8F6F23A5175A20F300F47335 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8F9F8F061760ADEB00B8FC4F /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		8F9F8F071760ADEB00B8FC4F /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +185,10 @@
 				8F653BA0175A3D1800DD968D /* InfoViewController.h */,
 				8F653BA1175A3D1800DD968D /* InfoViewController.m */,
 				8F653BA2175A3D1800DD968D /* InfoViewController.xib */,
+				8F653BAA175B070E00DD968D /* GlobalSet.h */,
+				8F653BAB175B070F00DD968D /* GlobalSet.m */,
+				8F9F8F061760ADEB00B8FC4F /* CustomCell.h */,
+				8F9F8F071760ADEB00B8FC4F /* CustomCell.m */,
 			);
 			path = "chevron mobile";
 			sourceTree = "<group>";
@@ -339,6 +349,8 @@
 				8F6F237B1759AE3A00F47335 /* SecondViewController.m in Sources */,
 				8F653B9E175A3C3C00DD968D /* UserViewController.m in Sources */,
 				8F653BA3175A3D1800DD968D /* InfoViewController.m in Sources */,
+				8F653BAC175B070F00DD968D /* GlobalSet.m in Sources */,
+				8F9F8F081760ADEB00B8FC4F /* CustomCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,8 +12,10 @@
 #import "InfoViewController.h"
 #import "SecondViewController.h"
 #import "UserViewController.h"
+#import "GlobalSet.h"
 
 @implementation AppDelegate
+@synthesize tabBarController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -22,18 +24,39 @@
     UIViewController *viewController1 = [[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil];
     
     UIViewController *viewController2 = [[UserViewController alloc] initWithNibName:@"UserViewController" bundle:nil];
-    //check commit
     
     UIViewController *viewController3 = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
     
     UIViewController *viewController4 = [[InfoViewController alloc] initWithNibName:@"InfoViewController" bundle:nil];
     
     self.tabBarController = [[UITabBarController alloc] init];
+    self.tabBarController.delegate=self;
     self.tabBarController.viewControllers = @[viewController1, viewController2,viewController3,viewController4];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;
 }
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
+{
+    if ([viewController.tabBarItem.title isEqualToString:@"User"])
+         {
+        UIAlertView *loginalert = [[UIAlertView alloc]
+                                   initWithTitle: @"Message"
+                                   message: @"Please verify login . . ."
+                                   delegate: nil
+                                   cancelButtonTitle:@"OK"
+                                   otherButtonTitles:nil];
+             if(![GlobalSet sharedInstance].loginflag){
+                 [loginalert show];
+                 self.tabBarController.selectedIndex=0;
+             }
+    }
+    else
+    {
+        //your code
+    }
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

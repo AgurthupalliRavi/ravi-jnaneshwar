@@ -8,6 +8,7 @@
 
 #import "FirstViewController.h"
 #import <QuartzCore/QuartzCore.h>
+#import "GlobalSet.h"
 
 @interface FirstViewController ()
 
@@ -36,6 +37,14 @@
     logintitle.shadowColor   = [UIColor blackColor];
     logintitle.shadowOffset  = CGSizeMake(-1.0,-1.0);
     
+    [GlobalSet sharedInstance].loginflag=NO;
+    
+    btnlogin.titleLabel.text=@"login";
+    [btnlogin setTitle:@"login" forState:UIControlStateNormal];
+    btnlogin.titleLabel.textColor = [UIColor blackColor];
+    txtusername.text=@"chevron";
+    txtpassword.text=@"chevron";
+    
     return self;
 }
 							
@@ -62,12 +71,33 @@
     //[alert show];
     if (txtusername.text.length==0) {
         [loginalert show];
+        return;
     }
     else if (txtpassword.text.length==0)
     {
         loginalert.message=@"Please enter password";
         [loginalert show];
+        return;
+    }
+    else if ([txtpassword.text isEqualToString:@"chevron"] && [txtusername.text isEqualToString:@"chevron"]){
+        if ([btnlogin.titleLabel.text isEqualToString:@"logout"]) {
+            
+            [GlobalSet sharedInstance].loginflag=NO;
+            [btnlogin setTitle:@"login" forState:UIControlStateNormal];
+            txtusername.text=@"";
+            txtpassword.text=@"";
+            //sender. .text=@"login";
+            return;
+        }
+        else{
+            [GlobalSet sharedInstance].loginflag=YES;
+            //btnlogin.titleLabel.text=@"logout";
+            [btnlogin setTitle:@"logout" forState:UIControlStateNormal];
+            [self.tabBarController setSelectedIndex: 1];
+            return;
+        }
     }
     
+
 }
 @end
