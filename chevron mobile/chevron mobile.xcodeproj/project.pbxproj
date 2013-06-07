@@ -41,6 +41,7 @@
 		8F9F8F121761606900B8FC4F /* QueueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F8F111761606900B8FC4F /* QueueViewController.m */; };
 		8F9F8F17176200DD00B8FC4F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F9F8F16176200DD00B8FC4F /* SystemConfiguration.framework */; };
 		8F9F8F1A1762018D00B8FC4F /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F8F191762018D00B8FC4F /* Reachability.m */; };
+		8F9F8F1C1762162000B8FC4F /* Under-Construction.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F9F8F1B1762162000B8FC4F /* Under-Construction.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,7 @@
 		8F9F8F16176200DD00B8FC4F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		8F9F8F181762018D00B8FC4F /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		8F9F8F191762018D00B8FC4F /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		8F9F8F1B1762162000B8FC4F /* Under-Construction.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Under-Construction.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +212,7 @@
 		8F6F23611759AE3A00F47335 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8F9F8F1B1762162000B8FC4F /* Under-Construction.jpg */,
 				8F653BA7175A3E6500DD968D /* images */,
 				8F6F23621759AE3A00F47335 /* chevron mobile-Info.plist */,
 				8F6F23631759AE3A00F47335 /* InfoPlist.strings */,
@@ -323,6 +326,7 @@
 				8F653B9F175A3C3C00DD968D /* UserViewController.xib in Resources */,
 				8F653BA4175A3D1800DD968D /* InfoViewController.xib in Resources */,
 				8F653BA6175A3D2400DD968D /* info.png in Resources */,
+				8F9F8F1C1762162000B8FC4F /* Under-Construction.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
