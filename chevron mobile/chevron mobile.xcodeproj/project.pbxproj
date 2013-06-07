@@ -38,6 +38,9 @@
 		8F6F23A41759AFF400F47335 /* mybg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F6F23A31759AFF400F47335 /* mybg.jpg */; };
 		8F6F23A6175A20F300F47335 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F6F23A5175A20F300F47335 /* QuartzCore.framework */; };
 		8F9F8F081760ADEB00B8FC4F /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F8F071760ADEB00B8FC4F /* CustomCell.m */; };
+		8F9F8F121761606900B8FC4F /* QueueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F8F111761606900B8FC4F /* QueueViewController.m */; };
+		8F9F8F17176200DD00B8FC4F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F9F8F16176200DD00B8FC4F /* SystemConfiguration.framework */; };
+		8F9F8F1A1762018D00B8FC4F /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9F8F191762018D00B8FC4F /* Reachability.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +96,11 @@
 		8F6F23A5175A20F300F47335 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		8F9F8F061760ADEB00B8FC4F /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
 		8F9F8F071760ADEB00B8FC4F /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		8F9F8F101761606900B8FC4F /* QueueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueueViewController.h; sourceTree = "<group>"; };
+		8F9F8F111761606900B8FC4F /* QueueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueueViewController.m; sourceTree = "<group>"; };
+		8F9F8F16176200DD00B8FC4F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		8F9F8F181762018D00B8FC4F /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		8F9F8F191762018D00B8FC4F /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F9F8F17176200DD00B8FC4F /* SystemConfiguration.framework in Frameworks */,
 				8F6F23A6175A20F300F47335 /* QuartzCore.framework in Frameworks */,
 				8F6F235B1759AE3A00F47335 /* UIKit.framework in Frameworks */,
 				8F6F235D1759AE3A00F47335 /* Foundation.framework in Frameworks */,
@@ -139,6 +148,7 @@
 		8F6F234E1759AE3A00F47335 = {
 			isa = PBXGroup;
 			children = (
+				8F9F8F16176200DD00B8FC4F /* SystemConfiguration.framework */,
 				8F6F23A5175A20F300F47335 /* QuartzCore.framework */,
 				8F6F23601759AE3A00F47335 /* chevron mobile */,
 				8F6F23921759AE3A00F47335 /* chevron mobileTests */,
@@ -170,6 +180,8 @@
 		8F6F23601759AE3A00F47335 /* chevron mobile */ = {
 			isa = PBXGroup;
 			children = (
+				8F9F8F181762018D00B8FC4F /* Reachability.h */,
+				8F9F8F191762018D00B8FC4F /* Reachability.m */,
 				8F6F23691759AE3A00F47335 /* AppDelegate.h */,
 				8F6F236A1759AE3A00F47335 /* AppDelegate.m */,
 				8F6F23721759AE3A00F47335 /* FirstViewController.h */,
@@ -189,6 +201,8 @@
 				8F653BAB175B070F00DD968D /* GlobalSet.m */,
 				8F9F8F061760ADEB00B8FC4F /* CustomCell.h */,
 				8F9F8F071760ADEB00B8FC4F /* CustomCell.m */,
+				8F9F8F101761606900B8FC4F /* QueueViewController.h */,
+				8F9F8F111761606900B8FC4F /* QueueViewController.m */,
 			);
 			path = "chevron mobile";
 			sourceTree = "<group>";
@@ -351,6 +365,8 @@
 				8F653BA3175A3D1800DD968D /* InfoViewController.m in Sources */,
 				8F653BAC175B070F00DD968D /* GlobalSet.m in Sources */,
 				8F9F8F081760ADEB00B8FC4F /* CustomCell.m in Sources */,
+				8F9F8F121761606900B8FC4F /* QueueViewController.m in Sources */,
+				8F9F8F1A1762018D00B8FC4F /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

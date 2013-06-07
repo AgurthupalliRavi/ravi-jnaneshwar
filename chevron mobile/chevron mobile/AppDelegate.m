@@ -20,6 +20,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+     [GlobalSet sharedInstance].UserData=[[NSMutableArray alloc]initWithObjects:@"Chevron",@"Chevron",@"Chevron Global1",@"Chevron GLobal2", nil];
     // Override point for customization after application launch.
     UIViewController *viewController1 = [[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil];
     
@@ -38,7 +39,7 @@
 }
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
 {
-    if ([viewController.tabBarItem.title isEqualToString:@"User"])
+    if ([viewController.tabBarItem.title isEqualToString:@"User"] || [viewController.tabBarItem.title isEqualToString:@"Queue"])
          {
         UIAlertView *loginalert = [[UIAlertView alloc]
                                    initWithTitle: @"Message"

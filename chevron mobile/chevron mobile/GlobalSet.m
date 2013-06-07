@@ -7,9 +7,13 @@
 //
 
 #import "GlobalSet.h"
+#import "Reachability.h"
+#import <SystemConfiguration/SystemConfiguration.h>
 
 @implementation GlobalSet
 @synthesize loginflag=_loginflag;
+@synthesize UserData=_UserData;
+@synthesize QueueData=_QueueData;
 
 + (GlobalSet *)sharedInstance
 {
@@ -23,6 +27,13 @@
     }
     // return the instance of this class
     return myInstance;
+}
+
++ (BOOL)connected
+{
+    Reachability *reachability = [Reachability reachabilityForInternetConnection];
+    NetworkStatus networkStatus = [reachability currentReachabilityStatus];
+    return (networkStatus == ReachableViaWiFi);
 }
 
 @end

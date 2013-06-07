@@ -10,8 +10,12 @@
 
 @interface GlobalSet : NSObject
 
+@property (nonatomic,retain) NSMutableArray *UserData;
+@property (nonatomic,retain) NSMutableArray *QueueData;
+
 @property (assign,readwrite) BOOL loginflag;
 
 + (GlobalSet *)sharedInstance;
++ (BOOL)connected;
 
 @end

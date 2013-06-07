@@ -42,12 +42,12 @@
     btnlogin.titleLabel.text=@"login";
     [btnlogin setTitle:@"login" forState:UIControlStateNormal];
     btnlogin.titleLabel.textColor = [UIColor blackColor];
-    txtusername.text=@"chevron";
-    txtpassword.text=@"chevron";
+    //txtusername.text=@"chevron";
+    //txtpassword.text=@"chevron";
     
     return self;
 }
-							
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -63,11 +63,11 @@
 - (IBAction)loginbtnclick:(id)sender {
     
     UIAlertView *loginalert = [[UIAlertView alloc]
-                          initWithTitle: @"Message"
-                          message: @"Please enter username"
-                          delegate: nil
-                          cancelButtonTitle:@"OK"
-                          otherButtonTitles:nil];
+                               initWithTitle: @"Message"
+                               message: @"Please enter username"
+                               delegate: nil
+                               cancelButtonTitle:@"OK"
+                               otherButtonTitles:nil];
     //[alert show];
     if (txtusername.text.length==0) {
         [loginalert show];
@@ -98,6 +98,6 @@
         }
     }
     
-
+    
 }
 @end

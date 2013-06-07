@@ -10,4 +10,8 @@
 
 @interface SecondViewController : UIViewController
 
+- (void)refreshqueue:(id)sender;
+@property(nonatomic,retain) UINavigationController *navigcontroller;
+
 @end
+
