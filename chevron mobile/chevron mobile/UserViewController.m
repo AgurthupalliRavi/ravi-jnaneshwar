@@ -148,6 +148,11 @@
     }
 }
 
+-(void) viewDidAppear:(BOOL)animated
+{
+    [self.tableView reloadData];
+    
+}
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     if (indexPath.section==4) {

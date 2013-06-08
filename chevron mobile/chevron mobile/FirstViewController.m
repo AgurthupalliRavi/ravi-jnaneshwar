@@ -69,6 +69,7 @@
                                cancelButtonTitle:@"OK"
                                otherButtonTitles:nil];
     //[alert show];
+   
     if (txtusername.text.length==0) {
         [loginalert show];
         return;
@@ -80,6 +81,8 @@
         return;
     }
     else if ([txtpassword.text isEqualToString:@"chevron"] && [txtusername.text isEqualToString:@"chevron"]){
+        if ([GlobalSet connected]){
+        
         if ([btnlogin.titleLabel.text isEqualToString:@"logout"]) {
             
             [GlobalSet sharedInstance].loginflag=NO;
@@ -97,7 +100,13 @@
             return;
         }
     }
+        else{
+            loginalert.message=@"Please connect to network to perform this action";
+            [loginalert show];
+            
+        }
+
     
-    
+    }
 }
 @end

@@ -21,6 +21,8 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
      [GlobalSet sharedInstance].UserData=[[NSMutableArray alloc]initWithObjects:@"Chevron",@"Chevron",@"Chevron Global1",@"Chevron GLobal2", nil];
+    [GlobalSet sharedInstance].QueueData=[[NSMutableArray alloc]init];
+    
     // Override point for customization after application launch.
     UIViewController *viewController1 = [[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil];
     

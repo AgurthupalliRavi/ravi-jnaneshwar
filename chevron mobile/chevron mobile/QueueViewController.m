@@ -30,6 +30,11 @@
     self.title=@"Queue";
     UIBarButtonItem *anotherButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(RefreshQueue:)];
     self.navigationItem.rightBarButtonItem = anotherButton;
+    
+}
+-(void) viewDidAppear:(BOOL)animated{
+    
+    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning
@@ -67,7 +72,7 @@
     }
     
     // Configure the cell.
-    cell.textLabel.text = @"ravi";
+    cell.textLabel.text = @"Profile Update Request";
     
     return cell;
 }
@@ -125,19 +130,27 @@
 }
 -(void) RefreshQueue:(id)sender
 {
+    UIAlertView *updateAlert=[[UIAlertView alloc]initWithTitle:@"Updated" message:@"Updated Successfully" delegate:nil cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil];
+    
     if ([GlobalSet connected]) {
-        UIAlertView *updateAlert=[[UIAlertView alloc]initWithTitle:@"Updated" message:@"Updated Successfully" delegate:nil cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil];
-        
+
         if ([[GlobalSet sharedInstance].UserData count]>0) {
             
+            [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+            
+            [NSThread sleepForTimeInterval:5.0];
             [[GlobalSet sharedInstance].UserData removeAllObjects];
             [GlobalSet sharedInstance].UserData=[[NSMutableArray alloc]initWithArray:[GlobalSet sharedInstance].QueueData copyItems:YES];
+            [[GlobalSet sharedInstance].QueueData removeAllObjects];
+            [self.tableView reloadData];
+            
+            [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
             
         }
-        else{
-            updateAlert.message=@"No Network detected; request placed in queue";
-            [updateAlert show];
-        }
+    }
+    else{
+        updateAlert.message=@"No Network detected; request cannot be processed";
+        [updateAlert show];
     }
     return;
 }
